@@ -21,7 +21,7 @@
 
 <% posts.forEach(function(post){%>
     <h1><%=post.title %></h1>
-    <p><%=post.content %> </p>
+    <p><%=post.content.substring(1, 500)+"...." %> </p>
 <% })%>
 
     <%- include('./partials/footer'); -%>
