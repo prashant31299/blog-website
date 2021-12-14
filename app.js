@@ -67,7 +67,7 @@ app.get("/posts/:postname/", (req, res) => {
           if (storedtitle === requestitle) {
             res.render("post", {
               title: post.title,
-              content: post.content.substring(1, 20)
+              content: post.content
             })
           }
       })
